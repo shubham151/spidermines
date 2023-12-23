@@ -49,7 +49,7 @@ function PostList(props) {
 
             {
                 !showLoadMask && posts.length === 0 &&
-                <div style={{color:'while'}}>
+                <div style={{color:'while'}}> 
                     <h1>There are no Posts yet!</h1>
                     <p>Try adding....</p>
                 </div>
