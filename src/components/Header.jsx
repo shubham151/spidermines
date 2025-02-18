@@ -1,12 +1,13 @@
 import styles from '../style/Header.module.css';
-import { FaUser, FaCode, FaBriefcase, FaEnvelope, FaLaptop, FaHome } from 'react-icons/fa';
+import { FaUser, FaCode, FaBriefcase, FaEnvelope, FaLaptop } from 'react-icons/fa';
+import { TbFileText } from "react-icons/tb";
 import { MdOutlineSettings } from 'react-icons/md';
 
 function Header() {
   return (
     <nav className={styles.dock}>
       <div className={styles.dockIcons}>
-        <a href="#" className={styles.dockItem}><FaHome size={28} /><span>Home</span></a>
+        <a href="/spidermines/ShubhamMishra_Resume.pdf" className={styles.dockItem}><TbFileText size={28} /><span>Resume</span></a>
         <a href="#about" className={styles.dockItem}><FaUser size={28} /><span>About</span></a>
         <a href="#skills" className={styles.dockItem}><FaCode size={28} /><span>Skills</span></a>
         <a href="#projects" className={styles.dockItem}><FaBriefcase size={28} /><span>Projects</span></a>
