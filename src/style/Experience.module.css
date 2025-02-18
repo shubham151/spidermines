@@ -1,0 +1,30 @@
+.experience {
+    background: #282c34;
+    padding: 50px;
+    color: white;
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+    color: #ffcc00;
+}
+
+.experienceList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experienceItem {
+    background: #1e1e2f;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.experienceItem:hover {
+    transform: scale(1.05);
+}
