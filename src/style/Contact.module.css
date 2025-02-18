@@ -1,27 +1,27 @@
-.contact {
-    background: #1e1e2f;
-    padding: 40px;
-    text-align: center;
-    color: white;
+/* Ubuntu Terminal Window */
+.terminal {
+    background: #000;
+    color: #33FF33;
+    font-family: "Ubuntu Mono", monospace;
+    padding: 20px;
+    margin: 50px auto;
+    width: 50%;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
 }
 
-.title {
-    font-size: 2rem;
-    color: #ffcc00;
+/* Terminal Prompt Effect */
+.prompt {
+    color: #FFCC00;
 }
 
-.info {
-    font-size: 1.2rem;
-    margin: 10px 0;
-}
-
+/* Hyperlink Styling */
 .link {
-    color: #ffcc00;
+    color: #33FF33;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease-in-out;
 }
 
 .link:hover {
-    color: #ffffff;
+    text-decoration: underline;
 }

@@ -1,30 +1,145 @@
 .experience {
-    background: #282c34;
+    background: #241124; /* Dark Ubuntu Theme */
     padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Ubuntu App Window */
+.window {
+    background: rgba(44, 2, 30, 0.9); /* Glass Effect */
+    width: 75%;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    font-family: "Ubuntu", sans-serif;
+    backdrop-filter: blur(10px);
+}
+
+/* Ubuntu Window Title Bar */
+.titleBar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 8px 15px;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Ubuntu Window Buttons */
+.red, .yellow, .green {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red { background: #E74C3C; }
+.yellow { background: #F1C40F; }
+.green { background: #2ECC71; }
+
+.windowTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
     color: white;
-    text-align: center;
+    margin-left: auto;
 }
 
-.title {
-    font-size: 2rem;
-    color: #ffcc00;
-}
-
-.experienceList {
+/* Experience Timeline Layout */
+.timeline {
+    position: relative;
+    padding: 20px;
     display: flex;
     flex-direction: column;
+}
+
+/* Timeline Connector Line */
+.timelineConnector {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 20px;
+}
+
+/* Timeline Dot */
+.timelineDot {
+    width: 14px;
+    height: 14px;
+    background: orange;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+/* Vertical Line */
+.timelineConnector::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: rgba(255, 165, 0, 0.5);
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Timeline Item */
+.timelineItem {
+    display: flex;
+    align-items: flex-start;
     gap: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-in-out forwards;
 }
 
-.experienceItem {
-    background: #1e1e2f;
-    padding: 20px;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+/* Experience Card */
+.timelineContent {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;
+    transition: transform 0.3s ease-in-out, background 0.3s ease;
 }
 
-.experienceItem:hover {
-    transform: scale(1.05);
+.timelineContent:hover {
+    transform: scale(1.02);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Job Title */
+.jobTitle {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ffcc00;
+    margin-bottom: 5px;
+}
+
+/* Company & Duration */
+.company {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ccc;
+}
+
+/* Description */
+.description {
+    font-size: 0.95rem;
+    color: #bbb;
+}
+
+/* Fade In Animation */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

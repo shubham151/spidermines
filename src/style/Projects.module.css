@@ -1,31 +1,65 @@
 .projects {
     background: #282c34;
     padding: 50px;
-    text-align: center;
-    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.title {
-    font-size: 2rem;
+/* Ubuntu Window */
+.window {
+    background: #2C001E;
+    width: 70%;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* Window Title Bar */
+.titleBar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.1);
+    padding: 8px 15px;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Ubuntu Window Buttons */
+.red, .yellow, .green {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.red { background: #E74C3C; }
+.yellow { background: #F1C40F; }
+.green { background: #2ECC71; }
+
+.windowTitle {
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #ffcc00;
-    margin-bottom: 20px;
+    color: white;
+    margin-left: auto;
 }
 
+/* Project Grid */
 .projectGrid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    max-width: 900px;
-    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    padding: 15px;
 }
 
+/* Project Cards (Ubuntu App Style) */
 .projectCard {
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 8px;
+    text-align: center;
     transition: transform 0.3s ease-in-out, background 0.3s ease;
-    text-align: left;
 }
 
 .projectCard:hover {
@@ -33,30 +67,42 @@
     background: rgba(255, 255, 255, 0.2);
 }
 
-.projectName {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #ffcc00;
+/* Ubuntu Terminal */
+.terminal {
+    background: black;
+    color: #33FF33;
+    font-family: "Ubuntu Mono", monospace;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Terminal Output */
+.terminalOutput {
+    max-height: 150px;
+    overflow-y: auto;
     margin-bottom: 10px;
 }
 
-.projectDescription {
-    font-size: 1rem;
-    margin-bottom: 15px;
-    color: #ccc;
-}
-
-.projectLink {
-    color: #ffcc00;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
+/* Terminal Command Input */
+.terminalInput {
     display: flex;
     align-items: center;
-    gap: 5px;
-    transition: color 0.3s ease-in-out;
 }
 
-.projectLink:hover {
-    color: white;
+.terminalInput .prompt {
+    color: #FFCC00;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.terminalInput input {
+    background: none;
+    border: none;
+    color: #33FF33;
+    font-family: "Ubuntu Mono", monospace;
+    font-size: 1rem;
+    width: 100%;
+    outline: none;
 }

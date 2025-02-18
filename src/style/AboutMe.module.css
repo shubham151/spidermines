@@ -1,26 +1,31 @@
-.about {
-    background: #282c34;
-    padding: 50px;
-    text-align: center;
+/* Ubuntu App Window */
+.window {
+    background: #2C001E;
     color: white;
+    border-radius: 8px;
+    margin: 50px auto;
+    width: 60%;
+    padding: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+    font-family: "Ubuntu", sans-serif;
 }
 
-.title {
-    font-size: 2rem;
-    font-weight: bold;
+/* Ubuntu Window Title Bar */
+.titleBar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
     margin-bottom: 10px;
-    color: #ffcc00;
 }
 
-.description {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    line-height: 1.6;
-    animation: fadeIn 1.5s ease-in-out;
+/* Close, Minimize, Maximize Buttons */
+.red, .yellow, .green {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    display: inline-block;
 }
 
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-}
+.red { background: #E74C3C; }
+.yellow { background: #F1C40F; }
+.green { background: #2ECC71; }
