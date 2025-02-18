@@ -8,7 +8,7 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  background-image: radial-gradient(ellipse at top left, #7f50e4, #4c05d0);
+  /* background-image: radial-gradient(ellipse at top left, #7f50e4, #4c05d0); */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -20,4 +20,23 @@ body {
   margin: 0;
   text-align: center;
   color: #e6ddf9;
+}
+
+body {
+  background: linear-gradient(135deg, #282c34, #333843, #39404d);
+  color: white;
+  font-family: "Ubuntu", sans-serif;
+}
+
+section {
+  padding: 50px;
+  border-radius: 12px;
+}
+
+/* Light Background for Sections */
+.skills, .projects, .experience {
+  background: rgba(255, 255, 255, 0.05); /* Soft glass effect */
+  box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
 }
