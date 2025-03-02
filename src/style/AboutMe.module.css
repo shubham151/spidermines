@@ -29,3 +29,9 @@
 .red { background: #E74C3C; }
 .yellow { background: #F1C40F; }
 .green { background: #2ECC71; }
+
+
+/* Paragraph */
+.parah {
+    font-size: 1rem;
+}
