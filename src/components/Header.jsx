@@ -1,44 +1,22 @@
 import { useEffect, useState } from 'react';
-import { initializeApp } from "firebase/app";
-import { getDatabase, ref, get, set } from "firebase/database";
 import styles from '../style/Header.module.css';
 import { FaUser, FaCode, FaBriefcase, FaEnvelope, FaLaptop, FaEye } from 'react-icons/fa';
 import { TbFileText } from "react-icons/tb";
-
-// Firebase Config
-const firebaseConfig = {
-  apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  databaseURL: process.env.NEXT_PUBLIC_FIREBASE_DATABASE_URL,
-  projectId: process.env.NEXT_PUBLIC_FIREBASE_PROJECT_ID,
-  storageBucket: process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID
-};
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-const db = getDatabase(app);
 
 function Header() {
   const [visitorCount, setVisitorCount] = useState(0);
 
   useEffect(() => {
-    const visitorRef = ref(db, 'visitorCount');
-    const hasVisited = sessionStorage.getItem("hasVisited");
-
-    get(visitorRef).then(snapshot => {
-      let count = snapshot.val() || 0;
-
-      if (!hasVisited) {
-        count += 1;
-        set(visitorRef, count);
-        sessionStorage.setItem("hasVisited", "true");
-      }
-
+    const hasVisited = sessionStorage.getItem("hasVisited"); // Check if the session flag exists
+    if (!hasVisited) {
+      let count = localStorage.getItem("visitorCount") || 0;
+      count = parseInt(count) + 1;
+      localStorage.setItem("visitorCount", count);
+      sessionStorage.setItem("hasVisited", "true"); // Set session flag to prevent double count
       setVisitorCount(count);
-    }).catch(error => console.error("Firebase error:", error));
-
+    } else {
+      setVisitorCount(localStorage.getItem("visitorCount") || 0);
+    }
   }, []);
 
   return (
