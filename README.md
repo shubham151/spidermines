@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shubham Mishra Portfolio
 
-## Getting Started
+This repository contains the code for my personal portfolio website built with [Next.js](https://nextjs.org/). The website is live at [spidermines.com](https://spidermines.com) and showcases my projects, skills, and experience.
 
-First, run the development server:
+## Table of Contents
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Development](#development)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Overview
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+This portfolio website is designed to be fast, responsive, and SEO-friendly. It leverages Next.js for server-side rendering and modern React features to create an engaging user experience. The site includes multiple sections such as an about page, project showcase, and contact form.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Features
 
-## Learn More
+- **Next.js Powered:** Enjoys the benefits of server-side rendering and static site generation.
+- **Responsive Design:** Optimized for desktop, tablet, and mobile viewing.
+- **SEO Optimized:** Structured to improve search engine visibility.
+- **Clean & Modern UI:** Focused on simplicity and ease of navigation.
 
-To learn more about Next.js, take a look at the following resources:
+## Installation
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To set up the project locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. **Clone the repository:**
 
-## Deploy on Vercel
+   ```bash
+   git clone https://github.com/shubham151/spidermines.git
+   cd spidermines
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Install dependencies:**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+   ```bash
+   npm install
+   ```
+
+   or if you prefer Yarn:
+
+   ```bash
+   yarn install
+   ```
+
+3. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+   or with Yarn:
+   ```bash
+   yarn dev
+   ```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the website.
+
+## Development
+
+- **Building for Production:**
+
+  ```bash
+  npm run build
+  ```
+
+  or:
+
+  ```bash
+  yarn build
+  ```
+
+- **Starting the Production Server:**
+  ```bash
+  npm start
+  ```
+  or:
+  ```bash
+  yarn start
+  ```
+
+Feel free to explore and modify the project to suit your needs.
+
+## Deployment
+
+The website is currently deployed at [spidermines.com](https://spidermines.com). For deploying your own version, consider using platforms like [Vercel](https://vercel.com/) or [Netlify](https://www.netlify.com/), which provide seamless integration with Next.js projects.
+
+### Deployment on Vercel
+
+1. Push your changes to GitHub.
+2. Sign in to Vercel and import your repository.
+3. Vercel will automatically detect that you are using Next.js.
+4. Configure any necessary environment variables and deploy.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions, find a bug, or want to improve the project, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+## Contact
+
+For any inquiries or further information, feel free to reach out:
+
+- **Email:** smish040@ucr.edu
+- **Portfolio:** [spidermines.com](https://spidermines.com)
