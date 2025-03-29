@@ -14,6 +14,8 @@
   },
   "dependencies": {
     "@llama-ui/react": "^1.0.0",
+    "countapi-js": "^1.0.2",
+    "counterapi": "^1.124.0",
     "firebase": "^11.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
