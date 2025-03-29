@@ -1,12 +1,28 @@
-import styles from '../style/Projects.module.css';
-import { FaExternalLinkAlt } from 'react-icons/fa';
-import { useState } from 'react';
+"use client";
+import styles from "@/styles/Projects.module.css";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { useState } from "react";
 
 function Projects() {
   const projects = [
-    { name: "Fix for RTL8821CE", description: "Revamped Wi-Fi drivers for Ubuntu.", link: "#", command: "cd Fix-for-RTL8821CE" },
-    { name: "Ongaku", description: "An AI-driven music recommender.", link: "#", command: "cd Ongaku" },
-    { name: "PseudocodeDiffing", description: "Ghidra plugin for reverse engineering.", link: "#", command: "cd PseudocodeDiffing" }
+    {
+      name: "Fix for RTL8821CE",
+      description: "Revamped Wi-Fi drivers for Ubuntu.",
+      link: "#",
+      command: "cd Fix-for-RTL8821CE",
+    },
+    {
+      name: "Ongaku",
+      description: "An AI-driven music recommender.",
+      link: "#",
+      command: "cd Ongaku",
+    },
+    {
+      name: "PseudocodeDiffing",
+      description: "Ghidra plugin for reverse engineering.",
+      link: "#",
+      command: "cd PseudocodeDiffing",
+    },
   ];
 
   const [terminalOutput, setTerminalOutput] = useState([]);
@@ -16,12 +32,12 @@ function Projects() {
     event.preventDefault();
     let output = `$ ${command}`;
 
-    const project = projects.find(p => command === p.command);
+    const project = projects.find((p) => command === p.command);
     if (project) {
       output += `\nOpening ${project.name}...\n`;
       window.open(project.link, "_blank"); // Open project link
     } else if (command === "ls") {
-      output += "\n" + projects.map(p => p.name).join("\n");
+      output += "\n" + projects.map((p) => p.name).join("\n");
     } else if (command === "clear") {
       setTerminalOutput([]);
       setCommand("");

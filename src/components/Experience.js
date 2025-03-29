@@ -1,5 +1,6 @@
+"use client";
 import { useState } from "react";
-import styles from "../style/Experience.module.css";
+import styles from "../styles/Experience.module.css";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 function Experience() {
@@ -23,7 +24,8 @@ function Experience() {
       title: "Senior Software Engineer",
       company: "Vistaar Systems Pvt. Ltd.",
       duration: "Jul 2019 - Aug 2023",
-      description: "As a Senior Software Engineer, I led the development of key systems using ELK, ReactJS, and Oracle, improving efficiency by 20%, and automated reporting processes. I also optimized data pipelines, implemented an ETL module, and developed strategic business solutions, while mentoring junior developers.",
+      description:
+        "As a Senior Software Engineer, I led the development of key systems using ELK, ReactJS, and Oracle, improving efficiency by 20%, and automated reporting processes. I also optimized data pipelines, implemented an ETL module, and developed strategic business solutions, while mentoring junior developers.",
       tasks: [
         "Developed and implemented a robust freight rate computation system using ELK, ReactJS, and Oracle, enabling 20% faster pricing calculations.",
         "Created automated sales reports and live dashboards using ELK, Oracle and JavaScript, reducing manual reporting time by 50%.",

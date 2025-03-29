@@ -1,36 +1,22 @@
 {
-  "name": "frontend",
-  "private": false,
-  "version": "0.0.0",
-  "homepage": "https://shubham151.github.io/spidermines",
-  "type": "module",
+  "name": "spidermines",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "dev": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "build": "vite build",
-    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@llama-ui/react": "^1.0.0",
-    "countapi-js": "^1.0.2",
-    "counterapi": "^1.124.0",
-    "firebase": "^11.4.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.12.0",
-    "web-vitals": "^3.5.0"
+    "next": "15.2.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-icons": "^5.5.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.37",
-    "@types/react-dom": "^18.2.15",
-    "@vitejs/plugin-react": "^4.2.0",
-    "eslint": "^8.53.0",
-    "eslint-plugin-react": "^7.33.2",
-    "eslint-plugin-react-hooks": "^4.6.0",
-    "eslint-plugin-react-refresh": "^0.4.4",
-    "gh-pages": "^6.1.0",
-    "vite": "^5.4.14"
+    "@eslint/eslintrc": "^3",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.4"
   }
 }

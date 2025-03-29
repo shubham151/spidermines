@@ -1,5 +1,6 @@
+"use client";
 import { useEffect, useState } from "react";
-import styles from "../style/Header.module.css";
+import styles from "@/styles/Header.module.css";
 import {
   FaUser,
   FaCode,
@@ -28,10 +29,7 @@ function Header() {
   return (
     <nav className={styles.dock}>
       <div className={styles.dockIcons}>
-        <a
-          href="/spidermines/ShubhamMishra_Resume.pdf"
-          className={styles.dockItem}
-        >
+        <a href="/ShubhamMishra_Resume.pdf" className={styles.dockItem}>
           <TbFileText size={28} />
           <span>Resume</span>
         </a>

@@ -8,7 +8,6 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  /* background-image: radial-gradient(ellipse at top left, #7f50e4, #4c05d0); */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -34,8 +33,11 @@ section {
 }
 
 /* Light Background for Sections */
-.skills, .projects, .experience {
-  background: rgba(255, 255, 255, 0.05); /* Soft glass effect */
+.skills,
+.projects,
+.experience {
+  background: rgba(255, 255, 255, 0.05);
+  /* Soft glass effect */
   box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 10px;
