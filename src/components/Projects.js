@@ -8,20 +8,26 @@ function Projects() {
     {
       name: "Fix for RTL8821CE",
       description: "Revamped Wi-Fi drivers for Ubuntu.",
-      link: "#",
+      link: "https://github.com/shubham151/rtl8821ce",
       command: "cd Fix-for-RTL8821CE",
     },
     {
       name: "Ongaku",
       description: "An AI-driven music recommender.",
-      link: "#",
+      link: "https://github.com/shubham151/Ongaku",
       command: "cd Ongaku",
     },
     {
       name: "PseudocodeDiffing",
       description: "Ghidra plugin for reverse engineering.",
-      link: "#",
+      link: "https://github.com/shubham151/PseudocodeDiffing",
       command: "cd PseudocodeDiffing",
+    },
+    {
+      name: "NoteTakingApp",
+      description: "Real-time note taking app.",
+      link: "https://github.com/shubham151/NoteTakingApp",
+      command: "cd NoteTakingApp",
     },
   ];
 
