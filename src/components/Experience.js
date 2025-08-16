@@ -5,6 +5,23 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 function Experience() {
   const experiences = [
+    ,
+    {
+      title: "Senior Software Engineer",
+      company: "Untracked Inc",
+      duration: "March 2025 - Present",
+      description:
+        "As a Senior Software Engineer at Untacked.ai, I led the development of a privacy-first AI platform using SvelteKit and PostgreSQL, enabling real-time, zero-retention multimodal data processing. I built scalable multi-LLM APIs, reducing latency by 40%, optimized full-stack performance, and improved deployment reliability by migrating from Supabase to Northflank. I also created a custom IDE with Electron and Svelte, featuring Tree-sitter-based syntax highlighting and LSP integration.",
+      tasks: [
+        "Architected and developed a privacy-first AI platform using SvelteKit and PostgreSQL, enabling zero-retention multimodal data processing.",
+        "Developed scalable, real-time APIs with model routing and streaming inference for multi-LLM workflows, reducing latency by 40%",
+        "Migrated infrastructure from Supabase/Vercel to Northflank with IaC pipelines, improving deployment reliability and performance.",
+        "Replaced managed services with self-hosted PostgreSQL for greater control over schema, access policies, and database performance.",
+        "Implemented authentication from scratch using JWT and session-based logic, enabling persistent login.",
+        "Wrote unit and integration tests using Vitest to ensure feature reliability across frontend and backend code.",
+        "Built an IDEfrom scratch using Electron and Svelte, implementing syntax highlighting with Tree-sitter and integrating Language Server Protocols (LSPs).",
+      ],
+    },
     {
       title: "Lead Developer & AI/ML Engineer",
       company: "M9 Market",
