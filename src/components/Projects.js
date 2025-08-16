@@ -29,6 +29,13 @@ function Projects() {
       link: "https://github.com/shubham151/NoteTakingApp",
       command: "cd NoteTakingApp",
     },
+    {
+      name: "FitnessApi",
+      description:
+        "This is the Fitness API project, which provides endpoints for user authentication, exercise management, and various features like favoriting, saving, rating exercises, and searching exercises.",
+      link: "https://github.com/shubham151/FitnessApis",
+      command: "cd FitnessApi",
+    },
   ];
 
   const [terminalOutput, setTerminalOutput] = useState([]);
@@ -41,7 +48,7 @@ function Projects() {
     const project = projects.find((p) => command === p.command);
     if (project) {
       output += `\nOpening ${project.name}...\n`;
-      window.open(project.link, "_blank"); // Open project link
+      window.open(project.link, "_blank");
     } else if (command === "ls") {
       output += "\n" + projects.map((p) => p.name).join("\n");
     } else if (command === "clear") {
